@@ -22,7 +22,7 @@ mongoose.connect(process.env.MONGODB_URI)
 
 // Enable CORS with specific options
 app.use(cors({
-  origin: 'http://localhost:5173', // Vite's default port
+  origin: 'https://blockchain-nu-amber.vercel.app', // Vite's default port
   credentials: true
 }));
 app.use(express.json());
